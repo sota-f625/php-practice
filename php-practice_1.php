@@ -7,6 +7,13 @@ echo "私の名前は「" . $name . "」です。";
 
 // Q2 四則演算
 
+$num  = 5 * 4;
+
+echo $num."\n";
+
+$num /= 2;
+
+echo $num;
 
 // Q3 日付操作
 
