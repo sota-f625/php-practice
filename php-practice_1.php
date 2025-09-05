@@ -17,6 +17,11 @@ echo $num;
 
 // Q3 日付操作
 
+date_default_timezone_set('Asia/Tokyo');
+
+$today = date("Y年m月d日 H時i分s秒");
+
+echo "現在時刻は、" . $today . "です。";
 
 // Q4 条件分岐-1 if文
 
