@@ -121,6 +121,12 @@ foreach ($prefecture as $pref => $capital ) {
 
 // Q10 関数-1
 
+function hello($name) {
+    echo $name . "さん、こんにちは。" . "\n";
+}
+
+hello("金谷");
+hello("安藤");
 
 // Q11 関数-2
 
