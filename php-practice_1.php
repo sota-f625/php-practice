@@ -73,6 +73,21 @@ foreach ($prefecture as $capital ) {
 
 // Q8 連想配列-2
 
+$prefecture = [
+    "東京都" => "新宿区",
+    "埼玉県" => "さいたま市",
+    "千葉県" => "千葉市",
+    "群馬県" => "前橋市",
+    "栃木県" => "宇都宮市",
+    "茨城県" => "水戸市",
+    "神奈川県" => "横浜市"
+];
+    
+foreach ($prefecture as $pref => $capital ) {
+    if($pref ==="埼玉県") {
+        echo $pref . "の県庁所在地は、" . $capital . "です。";
+    }
+}
 
 // Q9 連想配列-3
 
