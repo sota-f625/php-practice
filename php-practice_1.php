@@ -91,6 +91,33 @@ foreach ($prefecture as $pref => $capital ) {
 
 // Q9 連想配列-3
 
+$prefecture = [
+    "東京都" => "新宿区",
+    "埼玉県" => "さいたま市",
+    "千葉県" => "千葉市",
+    "群馬県" => "前橋市",
+    "栃木県" => "宇都宮市",
+    "茨城県" => "水戸市",
+    "神奈川県" => "横浜市"
+];
+
+$prefecture["愛知県"] = "名古屋市";
+$prefecture["大阪府"] = "大阪市";
+    
+foreach ($prefecture as $pref => $capital ) {
+    if($pref === "東京都" || 
+       $pref === "埼玉県" || 
+       $pref === "千葉県" || 
+       $pref === "群馬県" || 
+       $pref === "栃木県" || 
+       $pref === "茨城県" || 
+       $pref === "神奈川県" 
+       ) {
+        echo $pref . "の県庁所在地は、" . $capital . "です。" . "\n";
+    } else {
+        echo $pref . "は関東地方ではありません。" . "\n";
+    }
+} 
 
 // Q10 関数-1
 
