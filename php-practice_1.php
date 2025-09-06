@@ -35,6 +35,11 @@ if($device === "windows" || $device === "mac") {
 
 // Q5 条件分岐-2 三項演算子
 
+$age = 198;
+
+$message = ($age < 18) ? "未成年です。" : "成人です。";
+
+echo $message;
 
 // Q6 配列
 
