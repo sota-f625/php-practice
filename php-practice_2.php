@@ -20,6 +20,7 @@ number();
 
 // Q2 多次元連想配列
 
+// 問題1
 $personalInfos = [
     [
         'name' => 'Aさん',
@@ -40,7 +41,14 @@ $personalInfos = [
 
 echo $personalInfos[1]['name'] . "の電話番号は" . $personalInfos[1]['tel'] . "です。" ;
 
+// 問題2
+foreach ($personalInfos as $x => $y) {
+    echo ($x + 1) . "番目の" . $y['name'] . "のメールアドレスは" . $y['mail'] . "で、電話番号は" . $y['tel'] . "です。" . "\n";
+}
+
+
 // Q3 オブジェクト-1
+
 
 
 // Q4 オブジェクト-2
