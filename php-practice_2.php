@@ -111,4 +111,13 @@ $yamada->attend('PHP');
 
 
 // Q5 定義済みクラス
+// 問題1
+
+$date = new DateTime();
+echo $date->modify('-1 months')->format('Y-m-d');
+
+
+
+
+
 ?>
