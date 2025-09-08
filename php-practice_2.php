@@ -46,6 +46,13 @@ foreach ($personalInfos as $x => $y) {
     echo ($x + 1) . "番目の" . $y['name'] . "のメールアドレスは" . $y['mail'] . "で、電話番号は" . $y['tel'] . "です。" . "\n";
 }
 
+// 問題3
+
+$ageList = [25, 30, 18];
+
+foreach($personalInfos as $i => $j) {
+    $personalInfos[$i]["age"] = $ageList[$i];
+}
 
 // Q3 オブジェクト-1
 
