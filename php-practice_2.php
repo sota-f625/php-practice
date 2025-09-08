@@ -83,6 +83,32 @@ $yamada->info();
 
 // Q4 オブジェクト-2
 
+class Student
+{
+    public $studentId;
+    public $studentName;
+
+    public function __construct($id, $name)
+    {
+        $this->studentId = $id;
+        $this->studentName = $name;
+    }
+
+    public function attend($lang)
+    {
+        echo $this->studentName . 'は' . $lang . 'の授業に参加しました。学籍番号:' . $this->studentId;
+    }
+    
+    public function info() {
+        echo "学籍番号" . $this->studentId . "の生徒は" . $this->studentName . "です。";
+    }
+
+}
+
+$yamada = new Student(120, "山田");
+$yamada->info();
+$yamada->attend('PHP');
+
 
 // Q5 定義済みクラス
 ?>
