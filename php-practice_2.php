@@ -116,8 +116,13 @@ $yamada->attend('PHP');
 $date = new DateTime();
 echo $date->modify('-1 months')->format('Y-m-d');
 
+// 問題2
 
+$date1 = new DateTime();
+$date2 = new DateTime('1992-04-25');
+$diff = $date1->diff($date2);
 
+echo $diff->format('%a日');
 
 
 ?>
