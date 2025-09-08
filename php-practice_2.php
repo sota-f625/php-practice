@@ -56,6 +56,29 @@ foreach($personalInfos as $i => $j) {
 
 // Q3 オブジェクト-1
 
+class Student
+{
+    public $studentId;
+    public $studentName;
+
+    public function __construct($id, $name)
+    {
+        $this->studentId = $id;
+        $this->studentName = $name;
+    }
+
+    public function attend()
+    {
+        echo '授業に出席しました。';
+    }
+    
+    public function info() {
+        echo "学籍番号" . $this->studentId . "の生徒は" . $this->studentName . "です。";
+    }
+}
+
+$yamada = new Student(120, "山田");
+$yamada->info();
 
 
 // Q4 オブジェクト-2
